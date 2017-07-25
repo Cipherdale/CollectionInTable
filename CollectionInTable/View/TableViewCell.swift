@@ -23,7 +23,7 @@ class TableViewCell: UITableViewCell {
     /// TableViewCell properties
     let myCustomCellLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 24)
+        label.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         label.textAlignment = .left
         label.numberOfLines = 0
         return label

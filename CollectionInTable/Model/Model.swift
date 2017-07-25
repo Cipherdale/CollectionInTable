@@ -15,9 +15,10 @@ struct TableWithCollectionData {
     static func getTableWithCollectionData() -> [TableWithCollectionData] {
         let data1 = TableWithCollectionData(cellName: "TableViewCell 1", cellData: nil)
         let data2 = TableWithCollectionData(cellName: "TableViewCell 2", cellData: nil)
-        let data3 = TableWithCollectionData(cellName: "TableWithCollection", cellData: CustomCollectionViewData.getCustomCollectionViewData())
+        let data3 = TableWithCollectionData(cellName: "CollectionViewInTableViewCell", cellData: CustomCollectionViewData.getCustomCollectionViewData())
         let data4 = TableWithCollectionData(cellName: "TableViewCell 4", cellData: nil)
-        return [data1, data2, data3, data4]
+        let data5 = TableWithCollectionData(cellName: "TableViewCell 5", cellData: nil)
+        return [data1, data2, data3, data4, data5]
     }
 }
 

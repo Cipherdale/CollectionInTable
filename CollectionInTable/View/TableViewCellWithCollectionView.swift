@@ -23,7 +23,7 @@ class TableViewCellWithCollectionView: UITableViewCell, UICollectionViewDelegate
     /// TableViewCellWithCollectionView properties
     let myCustomCollectionCellLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 24)
+        label.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         label.textAlignment = .left
         label.numberOfLines = 0
         return label
@@ -76,7 +76,6 @@ class TableViewCellWithCollectionView: UITableViewCell, UICollectionViewDelegate
         
         // Setup collectionView layout
         collectionView.anchor(myCustomCollectionCellLabel.bottomAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 8, leftConstant: 0, bottomConstant: 8, rightConstant: 0, widthConstant: 0, heightConstant: 0)
-        collectionView.backgroundColor = .yellow
         
         collectionView.register(CollectionCell.self, forCellWithReuseIdentifier: collectionCellID)
         collectionView.dataSource = self
@@ -99,7 +98,6 @@ extension TableViewCellWithCollectionView: UICollectionViewDataSource, UICollect
         let stringData = dataForCollectionView[indexPath.item]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellID, for: indexPath) as! CollectionCell
         cell.dataForCollectionCell = stringData
-        cell.backgroundColor = .blue
         return cell
     }
     
@@ -108,10 +106,10 @@ extension TableViewCellWithCollectionView: UICollectionViewDataSource, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 8
+        return 16
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
+        return UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 12)
     }
 }

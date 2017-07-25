@@ -30,7 +30,7 @@ class CollectionInTableVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        navigationItem.title = "TableWithCollection"
+        navigationItem.title = "CollectionInTable"
         
         tableView.register(TableViewCell.self, forCellReuseIdentifier: tableViewCell)
         tableView.register(TableViewCellWithCollectionView.self, forCellReuseIdentifier: tableViewCellWithCollectionViewID)
