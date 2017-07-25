@@ -4,13 +4,13 @@
 Example project that implement UICollectionView inside UITableViewCell programmatically.
 
 ### Screenshot
-![Alt text](http://i1074.photobucket.com/albums/w406/andrian_icare/Github/TableWithCollection-Screenshot_1.png "TableWithCollection-Screenshot")
+![Alt text](http://i.imgur.com/szqFZ5W.png "CollectionInTable-Screenshot")
 
 ### How to Run the Examples
 - To run the example project, clone the repo.
 
 ### Requirements
-- Xcode 9.+ running a target of iOS 10.+
+- Xcode 9.+ running a target of iOS 11.+
 
 ### Development program version
 
