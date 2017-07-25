@@ -29,3 +29,7 @@ Example project that implement UICollectionView inside UITableViewCell programma
 
 ### Author
 - [Andrian Rahardja](https://github.com/episquare), andrian.rahardja@gmail.com
+
+### License
+
+- CollectionInTable is available under the MIT license. See the LICENSE file for more info.
