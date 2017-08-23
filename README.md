@@ -14,7 +14,7 @@ Example project that implement UICollectionView inside UITableViewCell programma
 
 ### Development program version
 
-- Xcode 9.0 beta 4 (9M189t)
+- Xcode 9.0 beta 6 (9M214v)
 
 ### Development language
 
